@@ -1,1 +1,1 @@
-### Dockerfile for [Axolotl]https://github.com/axolotl-ai-cloud/axolotl for Grace Hopper (GH200) superchip
+Dockerfile for [Axolotl](https://github.com/axolotl-ai-cloud/axolotl.git), tailored for the Grace Hopper (GH200) superchip. You can find the Docker image [here](https://hub.docker.com/repository/docker/tommasobendinelli/axolotl_arm64/general)
