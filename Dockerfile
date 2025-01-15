@@ -16,5 +16,5 @@ RUN git clone https://github.com/triton-lang/triton.git /triton && cd /triton &&
 RUN git clone -b 0.45.0  https://github.com/TimDettmers/bitsandbytes.git && cd bitsandbytes && pip install -r requirements-dev.txt && cmake -DCOMPUTE_BACKEND=cuda -DCMAKE_SYSTEM_PROCESSOR=arm64 -S . && make && pip install .
 
 RUN MAX_JOBS=4 TORCH_CUDA_ARCH_LIST="9.0" pip install -v -U git+https://github.com/pytorch/ao.git@v0.5.0
-
+RUN pip3 install transformers==4.47.1
 RUN pip3 install --no-build-isolation  axolotl
