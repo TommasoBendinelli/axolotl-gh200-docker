@@ -10,3 +10,10 @@ To build the Docker image from scratch, run the following command:
 sudo docker build -t image_name:latest .
 ```
 
+## Running the Docker Image
+
+To run the Docker image after the building process, run the following command:
+
+```bash
+sudo docker run -it --rm --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 my_image:latest
+```
